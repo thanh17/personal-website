@@ -1,44 +1,49 @@
+
 body{
-    background: black;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #dee4e7;
+    background: #eceff1;
+    font-family: 'Architects Daughter', cursive;;
+    color: #222222;
+    text-align: left;
+
+    
+}
+
+.intro-box {
+    margin: auto;
+    line-height: 1.5;
+    font-size: 25px;
+    color: #444444;
     margin: 0;
-    padding: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
 }
 header {
-    background-color: #37474F;
+    background-color: #eceff1;
     background-size: 100%;
     background-position: right;
     height: 10%;
     padding: 5px;
     text-align: right;
+    font-size: 20px;
   }
-div {
-    background: black;
-    display: inline-block;
-    width: 100px;
-    margin: auto;
-}
-.feature-box{
-    padding: 20px;
-    display: flex;
-}
-.feature-box.projects {
-    background: #37474F;
-    color: #C2C0BF;
-    padding: 20px;
-    display: flex;
-    flex-direction: row;
-}
 a:link, a:visited {
-    color: white;
-    padding: 14px 25px;
+    color: #0071BC;
+    /* padding: 14px 25px; */
     text-align: center;
     text-decoration: none;
     display: inline-block;
   }
 a:hover, a:active {
-    color:lightgray;
+    color: #444444;
   }
 ul {
     margin: 0;
@@ -55,3 +60,27 @@ footer{
     color:#dee4e7;
     margin: 2px;
 }
+
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */ 
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+  }
+
+input[type=submit] {
+    background-color: #0071BC;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+input[type=submit]:hover {
+    background-color: #0F60B6;
+  }
